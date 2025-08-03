@@ -36,6 +36,7 @@ import * as inputSelectLayoutExample from "./input-select-layout-demo"
 import * as styledTextExample from "./styled-text-demo"
 import * as mouseInteractionExample from "./mouse-interaction-demo"
 import * as textSelectionExample from "./text-selection-demo"
+import * as dinoGameExample from "./dino-game"
 import { getKeyHandler } from "../ui/lib/KeyHandler"
 
 interface Example {
@@ -46,6 +47,12 @@ interface Example {
 }
 
 const examples: Example[] = [
+  {
+    name: "Dino Game",
+    description: "Complete endless runner game - jump over obstacles with SPACE!",
+    run: dinoGameExample.run,
+    destroy: dinoGameExample.destroy,
+  },
   {
     name: "Mouse Interaction Demo",
     description: "Interactive mouse trails and clickable cells demonstration",
